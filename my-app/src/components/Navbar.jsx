@@ -5,7 +5,7 @@ import '../components/Navbar.css';
 const Navbar = () => {
   return (
     <div className='navbar'>
-        <p className='fancy-text'>Dil's Portfolio</p>
+        <p className='fancy-text'>Dil's Space</p>
         <ul>
             <Link to='/'><li>Home</li></Link>
             <Link to='/projects'><li>Projects</li></Link>
