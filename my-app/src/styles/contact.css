@@ -1,0 +1,173 @@
+
+.bg-image {
+  background-image: url("../assets/CallBackground.png");
+    /* Add the blur effect */
+    filter: blur(2.5px);
+    -webkit-filter: blur(2.5px);
+    height: 500px;
+}
+
+.contact-intro-text {
+  background-color: #09002b;; /* Fallback color */
+  background-color: #09002b7d; /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px 20px 40px 20px;
+  text-align: center;
+  text-shadow: 2px 1px 3px #ee31ff99;
+  border-radius: 15px;
+}
+
+.contact-intro-text h1 {
+  font-size: 6rem;
+  background: transparent;
+
+}
+.contact-intro-text p {
+  font-size: 1rem;
+  background: transparent;
+}
+
+.contact-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 150px auto 150px auto;
+  text-align: center;
+  font-size: 4rem;
+  /* border: 1px solid; */
+  display: flex;
+
+}
+
+.left-section {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 0 0 0;
+  font-size: 10.5rem;
+  text-align: left;
+  border-width: 1px;
+  border-style: solid;
+   border-style: solid none solid solid; 
+  border-radius: 100px 0 0 100px;
+  text-shadow: 2px 1px 3px #ee31ff99;
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%,var(--c2) 68% 70%,#0000 72%;
+  background:
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
+    radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
+    repeating-conic-gradient(var(--c1) 0 25%,#0000 0 50%) 0 0/var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
+    var(--c1);
+}
+
+.span-contact {
+  background: transparent;
+  text-align: right;
+}
+  
+.get-in-touch-container {
+  background: transparent;
+  padding-left: 40px;
+}
+
+.socials-container {
+  background: rgba(255, 255, 255, 0.796);
+  margin-bottom: 0;
+  margin-left: 0;
+  border-radius: 0 0 0 100px;
+  height: 16%;
+  display: inline-flex;  /* Arrange icons in a row */
+  gap: 10px;      /* Space between icons */
+  justify-content: space-between; /* Center the icons */
+  align-items: center; 
+  overflow: hidden;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.socials-container a 
+ {
+  background: transparent;
+  padding-bottom: 50px;
+  
+}
+
+.socials-container img {
+  background: transparent;
+  font-size: 1rem;
+}
+
+
+.right-section {
+  width: 45%;
+  padding: 80px 30px 40px 80px;
+  font-size: 1rem;
+  border-width: 1px 1px 1px 1px;
+  border-style: none solid solid none;
+  border-radius: 40px 0 40px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.input-container {
+  position: relative;
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.form-tag {
+  position: absolute;
+  top: -10px; /* Move label up */
+  left: 15px;
+  background: #09002b; /* Match the background color */
+  color: white;
+  font-size: 1rem;
+  padding: 0 5px; /* Add some spacing */
+}
+
+.form-input {
+  padding: 20px 20px 20px; /* Increase top padding for text */
+  border: 1px solid #a375b8; /* Match the border color in your image */
+  min-height: 60px;
+  width: 100%;
+  color: white;
+  border-radius: 15px;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+}
+
+
+.form-input::placeholder {
+  color: gray; /* Match the placeholder color */
+}
+
+.submit-button {
+  width: 180px;
+  padding: 20px 30px;
+  color: white;
+  border: none;
+  background-color: #a375b8;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.submit-button:hover {
+  background-color: #ee31ff99;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
