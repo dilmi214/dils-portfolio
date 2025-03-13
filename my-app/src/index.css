@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Pinyon+Script&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Sriracha&display=swap');
 
-
+ html {
+  --s: 100px; /* control the size*/
+  --c1: #09002b;
+  --c2: #ee31ff29;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,4 +21,11 @@ a {
   font-size: 3em;
   text-align: center;
   color: #fff;
+}
+
+
+
+.welcomeGIF {
+  width: 720px;
+  background-blend-mode: multiply;
 }
