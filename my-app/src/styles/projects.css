@@ -2,6 +2,7 @@
     text-align: center; /* Center the text */
     font-size: 4rem; /* Make it larger */
     margin-bottom: 20px; /* Space between title and projects */
+    margin-top: 160px;
     font-weight: bold;
     display: block;
     text-shadow: 2px 1px 3px rgba(238, 49, 255, 0.6);
