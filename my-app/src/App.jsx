@@ -5,6 +5,7 @@ import RootLayout from './layout/RootLayout'
 import Projects from './pages/Projects'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import PageNotFound from './pages/Pg404'
 
 const App = () => {
   const router = createBrowserRouter(
@@ -14,6 +15,7 @@ const App = () => {
         <Route path='projects' element = { <Projects /> } />
         <Route path='about' element = { <About /> } />
         <Route path='contact' element = { <Contact /> } />
+        <Route path="*" element={ <PageNotFound />} /> 
       </Route>
     )
   )
