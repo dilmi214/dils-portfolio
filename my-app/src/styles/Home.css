@@ -1,0 +1,46 @@
+.container {
+
+}
+
+.section1 {
+    padding-top: 200px;
+    display: flex;
+    width: 100%;
+    padding-right: 150px;
+}
+.girl-img-container {
+    width: 55%;
+}
+
+.girlIMG {
+    width: 50%;
+}
+.intro-text {
+    width: 45%;
+    text-align: left;
+    padding-top: 30px;
+    letter-spacing: 3px;
+}
+
+.intro-text h1 {
+    font-size: 5rem;
+    text-shadow: 2px 1px 3px rgba(238, 49, 255, 0.6);
+}
+
+.intro-text .fancy-text {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    text-shadow: 2px 1px 3px rgba(238, 49, 255, 0.6);
+}
+
+.intro-text h2 {
+    font-size: 3rem;
+}
+
+.intro-text p {
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    line-height: 32px;
+}
