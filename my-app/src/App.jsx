@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import RootLayout from './layout/RootLayout'
 import Projects from './pages/Projects'
-import About from './pages/About'
+import BeyondCode from './pages/About'
 import Contact from './pages/Contact'
 import PageNotFound from './pages/Pg404'
 
@@ -13,7 +13,7 @@ const App = () => {
       <Route path = '/' element={ <RootLayout/>} >
         <Route index element= { <Home /> }/>
         <Route path='projects' element = { <Projects /> } />
-        <Route path='about' element = { <About /> } />
+        <Route path='beyond-code' element = { <BeyondCode /> } />
         <Route path='contact' element = { <Contact /> } />
         <Route path="*" element={ <PageNotFound />} /> 
       </Route>

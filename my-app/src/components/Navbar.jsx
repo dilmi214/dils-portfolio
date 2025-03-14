@@ -14,7 +14,7 @@ const Navbar = () => {
         <ul>
             <Link to='/'><li>Home</li></Link>
             <Link to='/projects'><li>Projects</li></Link>
-            <Link to = '/about'><li>About</li></Link>
+            <Link to = '/beyond-code'><li>Beyond Code</li></Link>
             <Link to='/contact' state={{ github: githubLink, linkedin: linkedinLink, insta: instaLink, mail: mailLink }}><li>Contact</li></Link>
         </ul>
     </div>
