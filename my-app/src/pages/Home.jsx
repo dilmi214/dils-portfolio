@@ -2,10 +2,10 @@ import React from 'react'
 import HomeGirl from '../assets/home-girl.png'
 import '../styles/Home.css'
 import { Link } from 'react-router-dom'
-import CV from 'https://drive.google.com/uc?export=download&id=1gLjRF0ROA5W8Q0L_D4KqC1Qqz3t55hni';
 
 
 const Home = () => {
+  const CV = 'https://drive.google.com/uc?export=download&id=1gLjRF0ROA5W8Q0L_D4KqC1Qqz3t55hni';
   return (
     <div className='container'>
       <div className="section1">
