@@ -28,7 +28,6 @@
 .intro-text {
     width: 45%;
     text-align: left;
-    padding-top: 30px;
     letter-spacing: 3px;
     background-color: transparent;
 }
@@ -44,7 +43,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 6rem;
-    text-shadow: 2px 1px 3px rgba(238, 49, 255, 0.6);
+    text-shadow: 2px 1px 3px #ee31ff99;
 }
 
 .intro-text h2 {
@@ -56,4 +55,32 @@
     letter-spacing: 3px;
     line-height: 32px;
     background-color: transparent;
+    margin-bottom: 0;
 }
+
+.cv-button,
+.contact-button {
+    width: 180px;
+    padding: 20px 30px;
+    color: white;
+    border: none;
+    background-color: #d32be2;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  .intro-text a,
+  .intro-text Link {
+    background-color: transparent;
+  }
+  
+  .cv-button:hover, 
+  .contact-button:hover {
+    background-color: #c128cf;
+    transition-duration: 0.6s;
+    cursor: pointer;
+  }
+
+  .cv-button {
+    margin-right: 30px;
+  }
