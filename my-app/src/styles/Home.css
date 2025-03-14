@@ -1,30 +1,42 @@
-.container {
-
-}
-
 .section1 {
     padding-top: 200px;
     display: flex;
     width: 100%;
     padding-right: 150px;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,var(--c2) 68% 70%,#0000 72%;
+    background:
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
+      radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
+      radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
+      repeating-conic-gradient(var(--c1) 0 25%,#0000 0 50%) 0 0/var(--_s),
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
+      var(--c1);
+      min-height: 100vh;
 }
 .girl-img-container {
     width: 55%;
+    background-color: transparent;
 }
 
 .girlIMG {
     width: 50%;
+    background-color: transparent;
 }
 .intro-text {
     width: 45%;
     text-align: left;
     padding-top: 30px;
     letter-spacing: 3px;
+    background-color: transparent;
 }
 
 .intro-text h1 {
     font-size: 5rem;
     text-shadow: 2px 1px 3px rgba(238, 49, 255, 0.6);
+    background-color: transparent;
 }
 
 .intro-text .fancy-text {
@@ -43,4 +55,5 @@
     font-size: 1.25rem;
     letter-spacing: 3px;
     line-height: 32px;
+    background-color: transparent;
 }
