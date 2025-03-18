@@ -1,13 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../components/Navbar.css';
-
+import { socialLinks } from '../assets/links';
 
 const Navbar = () => {
-  let githubLink = "https://github.com/dilmi214";
-  let linkedinLink = "https://www.linkedin.com/in/dilmi-fernando-078a99251/"
-  let instaLink = "https://www.instagram.com/dilmi.v"
-  let mailLink = "https://mail.google.com/mail/?view=cm&to=dilmifernando214@gmail.com"
   return (
     <div className='navbar'>
         <p className='fancy-text'>Dil's Space</p>
@@ -15,7 +11,7 @@ const Navbar = () => {
             <Link to='/'><li>Home</li></Link>
             <Link to='/projects'><li>Projects</li></Link>
             <Link to = '/beyond-code'><li>Beyond Code</li></Link>
-            <Link to='/contact' state={{ github: githubLink, linkedin: linkedinLink, insta: instaLink, mail: mailLink }}><li>Contact</li></Link>
+            <Link to={`/contact?github=${encodeURIComponent(socialLinks.github)}&linkedin=${encodeURIComponent(socialLinks.linkedin)}&insta=${encodeURIComponent(socialLinks.insta)}&mail=${encodeURIComponent(socialLinks.mail)}`}>Contact</Link>
         </ul>
     </div>
   )

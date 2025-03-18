@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import HomeGirl from '../assets/home-girl.png'
 import '../styles/Home.css'
 import { Link } from 'react-router-dom'
+import { socialLinks } from '../assets/links';
 
 
 
@@ -37,7 +38,7 @@ const Home = () => {
                 I contribute to open-source communities and enjoy taking on new challenges in software development.</p>
 
                 <a href= { CV } download><button className="cv-button">Download CV</button></a>
-                <Link to='/contact'><button className="contact-button">Contact Me</button></Link>
+                <Link to={`/contact?github=${encodeURIComponent(socialLinks.github)}&linkedin=${encodeURIComponent(socialLinks.linkedin)}&insta=${encodeURIComponent(socialLinks.insta)}&mail=${encodeURIComponent(socialLinks.mail)}`}><button className="contact-button">Contact Me</button></Link>
             </div>
           </div>
           {/* <div className="section2">

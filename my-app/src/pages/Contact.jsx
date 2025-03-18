@@ -7,11 +7,12 @@ import MailIcon from '../assets/mail.png'
 import { useLocation } from 'react-router-dom'
 
 const Contact = () => {
-  const location = useLocation();
-  const githubLink = location.state?.github || "Default Link"; // Fallback if no state
-  const linkedinLink = location.state?.linkedin || "Default Link";
-  const instaLink = location.state?.insta || "Default Link";
-  const mailLink = location.state?.mail || "Default Link";
+  const queryParams = new URLSearchParams(useLocation().search);
+
+  const githubLink = queryParams.get('github') || "Default Link";
+  const linkedinLink = queryParams.get('linkedin') || "Default Link";
+  const instaLink = queryParams.get('insta') || "Default Link";
+  const mailLink = queryParams.get('mail') || "Default Link";
 
     const [loading, setLoading] = useState(true);
   
