@@ -189,7 +189,7 @@
 
 
   .contact-intro-text h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
   }
 
@@ -211,7 +211,7 @@
 
   /* Stack the elements in left-section for mobile */
   .get-in-touch-container {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 40px;
     order: 1;
     padding-left: 0;  
