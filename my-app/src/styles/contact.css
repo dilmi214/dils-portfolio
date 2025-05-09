@@ -34,6 +34,7 @@
 .contact-intro-text p {
   font-size: 1rem;
   background: transparent;
+  line-height: 28px;
 }
 
 .contact-card {
@@ -179,8 +180,8 @@
 @media (max-width: 768px) {
   .contact-card {
     flex-direction: column;
-    width: 90%;
-    margin: 50px auto 50px;
+    width: 88%;
+    margin: 70px auto 50px;
     text-align: left;
     font-size: 1.2rem;
     border: 1px solid #a375b8; /* normal border */
@@ -188,9 +189,14 @@
     overflow: hidden; /* Prevents border from breaking in the corners */
   }
 
+  .bg-image {
+    height: 460px;
+  }
+
   .contact-intro-text {
     top: 300px;
     border: none;
+    width: 90%;
   }
 
 
@@ -200,14 +206,13 @@
   }
 
   .contact-intro-text p {
-    width: 80%;
     margin: 0 auto;
   }
 
   .left-section, .right-section {
     width: 100%;
     text-align: center;
-    padding: 20px 10px;
+    padding: 0;
     border: none;
   }
 
@@ -217,8 +222,9 @@
 
   /* Stack the elements in left-section for mobile */
   .get-in-touch-container {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 40px;
+    margin-top: 40px;
     order: 1;
     padding-left: 0;  
   }
@@ -227,15 +233,15 @@
     display: flex;
     justify-content: center; /* Centers the links horizontally */
     gap: 20px; /* Adds space between icons */
-    margin-top: 0;
+    margin-top: 10px;
     padding-left: 0;
     padding-right: 0;
     order: 3;
     border-radius: 0;
-    height: 90px;
+    height: 65px;
     padding-top: 0;
     font-size: 0;
-    margin-left: 0;
+    border: 1px;
   }
 
   .socials-container a {
@@ -244,12 +250,13 @@
   }
 
   .right-section {
-    padding: 20px 10px;
+    padding: 50px 10px 20px;
     order: 2;
   }
 
   .form-group {
     margin-bottom: 30px;
+    padding: 0 10px;
   }
 
   /* Stack the form fields for mobile */
@@ -269,6 +276,9 @@
     margin: 0 10px;
   }
   
+  .socials-container img {
+    width: 40px;
+  }
   .spinner {
     width: 60px;
     height: 60px;
