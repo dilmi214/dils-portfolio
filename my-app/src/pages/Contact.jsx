@@ -5,6 +5,12 @@ import LinkedInIcon from '../assets/linkedin.png'
 import GithubIcon from '../assets/github.png'
 import MailIcon from '../assets/mail.png'
 import { useLocation } from 'react-router-dom'
+import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import '../styles/toastStyles.css';
+
 
 const Contact = () => {
   const queryParams = new URLSearchParams(useLocation().search);
@@ -24,8 +30,44 @@ const Contact = () => {
       return () => clearTimeout(timer); // Cleanup timeout
     }, []);
 
+    const sendEmail = (e) => {
+      e.preventDefault();
+    
+      emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, // service ID        
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // template ID
+        e.target, // The form element
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // user ID
+      ).then(
+        (result) => {
+          console.log('Email successfully sent!', result.text);
+          toast.success('Your message has been sent successfully! We will get back to you soon.');
+        },
+        (error) => {
+          console.error('Email sending error:', error.text);
+          toast.error('Oops! Something went wrong. Please try again later.');
+        }
+      );
+    
+      e.target.reset(); // Reset form fields
+    };
+    
+    
+
   return (
     <div>
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       {/* Show spinner while loading */}
       {loading && (
         <div className="loading-spinner">
@@ -59,7 +101,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="right-section">
-              <div className="form-group">
+              <form className="form-group" onSubmit={sendEmail}>
                 <div className="input-container">
                   <label className="form-tag">Name</label>
                   <input type="text" name="name" className="form-input" placeholder="Enter your name" />
@@ -72,8 +114,9 @@ const Contact = () => {
                   <label className="form-tag">Inquiry</label>
                   <textarea rows="10" name="inquiry" className="form-input" placeholder="Enter your inquiry"></textarea>
                 </div>
-                <button className='submit-button'>Submit</button>
-              </div>
+                <input type="hidden" name="time" value={new Date().toLocaleString()}/>
+                <button type="submit" className='submit-button'>Submit</button> 
+              </form>
             </div>
           </div>
         </div>

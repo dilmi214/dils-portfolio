@@ -1,0 +1,50 @@
+.Toastify__toast {
+    border-radius: 10px;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1a003b;
+    box-shadow: 0 4px 12px rgba(255, 0, 255, 0.2);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.4s ease-in-out;
+  }  
+  
+  /* Success - Cyan accent */
+  .Toastify__toast--success {
+    background-color: rgba(0, 224, 255, 0.1);
+    color: #fac1ff;
+    border-left: 5px solid #fac1ff;
+    box-shadow: 0 0 10px #00e0ff33;
+  }
+  
+  /* Error - Magenta glow */
+  .Toastify__toast--error {
+    background-color: rgba(255, 60, 172, 0.1);
+    color: #ff3cac;
+    border-left: 5px solid #ff3cac;
+    box-shadow: 0 0 10px #ff3cac33;
+  }
+  
+  /* Info - Soft violet-blue */
+  .Toastify__toast--info {
+    background-color: rgba(136, 153, 255, 0.1);
+    color: #8899ff;
+    border-left: 5px solid #8899ff;
+    box-shadow: 0 0 10px #8899ff33;
+  }
+  
+  /* Close Button */
+  .Toastify__close-button {
+    color: #ffffffcc;
+    background: transparent !important;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+  }
+  
+  .Toastify__close-button:hover {
+    color: #ffffff;
+    opacity: 1;
+  }
+  
