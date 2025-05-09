@@ -14,7 +14,7 @@
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 32%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -186,6 +186,10 @@
     border: 1px solid #a375b8; /* normal border */
     border-radius: 10px; /* Keep rounded corners */
     overflow: hidden; /* Prevents border from breaking in the corners */
+  }
+
+  .contact-intro-text {
+    top: 45%;
   }
 
 
