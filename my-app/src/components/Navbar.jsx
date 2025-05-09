@@ -1,12 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import '../components/Navbar.css';
 import { socialLinks } from '../assets/links';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
+    // Close menu on route change
+    useEffect(() => {
+      setMenuOpen(false);
+    }, [location]);
+  
   return (
     <div className='navbar'>
         <div className="navbar-header">
