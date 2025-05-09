@@ -33,13 +33,21 @@ const Home = () => {
             <img className='girlIMG' src={ HomeGirl } alt='Image of a girl'/>
             </div>
             <div className="intro-text">
-              <h1>Hello, I'm <span className='fancy-text'>Dil</span>.</h1>
-              <p>Passionate about problem-solving, innovation, and continuous learning. 
-                I contribute to open-source communities and enjoy taking on new challenges in software development.</p>
-
-                <a href= { CV } download><button className="cv-button">Download CV</button></a>
-                <Link to={`/contact?github=${encodeURIComponent(socialLinks.github)}&linkedin=${encodeURIComponent(socialLinks.linkedin)}&insta=${encodeURIComponent(socialLinks.insta)}&mail=${encodeURIComponent(socialLinks.mail)}`}><button className="contact-button">Contact Me</button></Link>
-            </div>
+              <div className="intro-header">
+                <h1>Hello, I'm <span className='fancy-text'>Dil</span>.</h1>
+              </div>
+              <div className="intro-paragraph">
+                <p>
+                  Passionate about problem-solving, innovation, and continuous learning. 
+                  I contribute to open-source communities and enjoy taking on new challenges in software development.
+                </p>
+              </div>
+              <a href={CV} download>
+                <button className="cv-button">Download CV</button>
+              </a>
+              <Link to={`/contact?github=${encodeURIComponent(socialLinks.github)}&linkedin=${encodeURIComponent(socialLinks.linkedin)}&insta=${encodeURIComponent(socialLinks.insta)}&mail=${encodeURIComponent(socialLinks.mail)}`}>
+                <button className="contact-button">Contact Me</button>
+              </Link></div>
           </div>
           {/* <div className="section2">
             <div className="skills-container">

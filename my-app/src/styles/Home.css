@@ -16,6 +16,11 @@
       var(--c1);
       min-height: 100vh;
 }
+
+.intro-paragraph,
+.intro-header {
+  background-color: transparent;
+}
 .girl-img-container {
     width: 55%;
     background-color: transparent;
@@ -84,3 +89,71 @@
   .cv-button {
     margin-right: 30px;
   }
+
+  @media screen and (max-width: 1024px) {
+    .section1 {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 150px;
+      padding-right: 0;
+      text-align: center;
+    }
+  
+    .girl-img-container,
+    .intro-text {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .intro-text {
+      width: 100%;
+      border-radius: 50%;
+      padding: 0 25px;
+      text-align: center;
+      display: inline-block; /* or block if you want full-width */
+      margin: 0;
+      padding: 20px;
+      line-height: 0; /* Helps eliminate vertical gaps in some cases */
+    }
+  
+    .girlIMG {
+      width: 60%;
+      max-width: 300px;
+      border-radius: 50%;
+    }
+  
+    .intro-text h1 {
+      font-size: 2rem;
+      margin-bottom: 50px;
+    }
+  
+    .intro-text .fancy-text {
+      font-size: 3rem;
+    }
+  
+    .intro-text p {
+      font-size: 1rem;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+  
+    .cv-button,
+    .contact-button {
+      width: 160px;
+      padding: 15px 18px;
+      font-size: 0.9rem;
+    }
+  
+    .cv-button {
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+
+    .intro-paragraph a {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  
+  
