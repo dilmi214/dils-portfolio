@@ -171,3 +171,105 @@
   transition-duration: 0.6s;
   cursor: pointer;
 }
+
+/* Existing styles for desktop remain unchanged */
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+    width: 90%;
+    margin: 50px auto 50px;
+    text-align: left;
+    font-size: 1.2rem;
+    border: 1px solid #a375b8; /* normal border */
+    border-radius: 10px; /* Keep rounded corners */
+    overflow: hidden; /* Prevents border from breaking in the corners */
+  }
+
+
+  .contact-intro-text h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-intro-text p {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+    border: none;
+  }
+
+  .left-section > .get-in-touch-container {
+    order: 1; /* "Get in touch" stays on top */
+  }
+
+  /* Stack the elements in left-section for mobile */
+  .get-in-touch-container {
+    font-size: 5rem;
+    margin-bottom: 40px;
+    order: 1;
+    padding-left: 0;  
+  }
+
+  .socials-container {
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    gap: 20px; /* Adds space between icons */
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    order: 3;
+    border-radius: 0;
+    height: 90px;
+    padding-top: 0;
+    font-size: 0;
+    margin-left: 0;
+  }
+
+  .socials-container a {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .right-section {
+    padding: 20px 10px;
+    order: 2;
+  }
+
+  .form-group {
+    margin-bottom: 30px;
+  }
+
+  /* Stack the form fields for mobile */
+  .input-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust the submit button for mobile */
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  /* Adjust the container for social links */
+  .socials-container a {
+    margin: 0 10px;
+  }
+  
+  .spinner {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #a375b8;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
